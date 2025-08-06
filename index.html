@@ -6,12 +6,10 @@
   <style>
     body {
       font-family: 'Verdana', sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      margin: 0;
-      padding: 0;
+      background-color: #fff;
+      color: #333;
+      margin: 0; padding: 0;
     }
-
     .banner {
       background-image: url('https://www.odu.edu/sites/default/files/program-page/headerimages/global-health-header.jpeg');
       background-size: cover;
@@ -20,46 +18,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: #fff;
       text-shadow: 2px 2px 4px #000;
     }
-
     .banner h1 {
       font-size: 36px;
       font-family: 'Georgia', serif;
-      background-color: rgba(0, 0, 0, 0.4);
+      background: rgba(0,0,0,0.4);
       padding: 10px 20px;
       border-radius: 8px;
     }
-
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
     }
-
-    h2 {
-      font-size: 22px;
-      color: #004c3f;
-    }
-
-    .highlight {
-      font-style: italic;
-      color: #0077b6;
-    }
-
+    h2 { font-size:22px; color:#004c3f; }
+    .highlight { font-style: italic; color: #0077b6; }
     .important {
       font-weight: bold;
       font-size: 18px;
       font-family: 'Arial', sans-serif;
       color: #b22222;
     }
-
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-
+    a { color: #0077b6; text-decoration: none; }
     .download-btn {
       display: inline-block;
       background-color: #004c3f;
@@ -71,26 +53,19 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
-    .download-btn:hover {
-      background-color: #006b50;
-    }
-
+    .download-btn:hover { background-color: #006b50; }
     img {
       width: 100%;
       max-width: 800px;
       display: block;
       margin: 20px auto;
     }
-
     footer {
       margin-top: 40px;
       font-size: 14px;
       text-align: center;
       color: gray;
     }
-
-    /* Collapsible section */
     .collapsible {
       background-color: #e6f1ed;
       color: #004c3f;
@@ -104,11 +79,7 @@
       margin-top: 20px;
       border-radius: 5px;
     }
-
-    .collapsible:hover {
-      background-color: #d1e8e0;
-    }
-
+    .collapsible:hover { background-color: #d1e8e0; }
     .content {
       padding: 0 18px;
       display: none;
@@ -117,40 +88,41 @@
       border-left: 4px solid #004c3f;
       margin-bottom: 20px;
     }
-
-    /* Timeline */
+    /* Vertical Timeline */
     .timeline {
       position: relative;
       margin: 30px 0;
-      padding-left: 30px;
-      border-left: 4px solid #004c3f;
+      padding-left: 40px;
     }
-
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #004c3f;
+    }
     .timeline-event {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       position: relative;
     }
-
     .timeline-event::before {
       content: '';
       position: absolute;
-      left: -10px;
-      top: 0;
+      left: -8px;
+      top: 5px;
       width: 16px;
       height: 16px;
       background-color: #004c3f;
       border-radius: 50%;
     }
-
     .timeline-event h4 {
       margin: 0;
       font-size: 18px;
       color: #004c3f;
     }
-
-    .timeline-event p {
-      margin: 5px 0 0 0;
-    }
+    .timeline-event p { margin: 5px 0 0 0; }
   </style>
 </head>
 <body>
@@ -162,15 +134,13 @@
   <div class="container">
     <p><i>Your Partner in Holistic Wellness</i></p>
 
-    <!-- Collapsible: Our Story -->
     <button class="collapsible">📘 Our Story</button>
     <div class="content">
       <p><span class="important">Eloheh Healthcare</span> was <u>established in 2015</u> with a mission to deliver inclusive, compassionate, and accessible healthcare to individuals from all walks of life.</p>
       <p class="highlight">We began as a small, community-driven clinic and have evolved into a nationally trusted provider serving diverse populations through innovation and care.</p>
-      <p>The word <b>Eloheh</b> comes from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i> — a guiding principle in our approach to care. Founded by a team of nurses, public health advocates, and educators, Eloheh set out to bridge the gap in healthcare access through mobile units, culturally responsive services, and community education.</p>
+      <p>The word <b>Eloheh</b> comes from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i>. Founded by a team of nurses, public health advocates, and educators, Eloheh set out to bridge healthcare access gaps through mobile units, culturally responsive services, and community education.</p>
     </div>
 
-    <!-- Timeline: Our Journey -->
     <h2>⏳ Our Journey Through the Years</h2>
     <div class="timeline">
       <div class="timeline-event">
@@ -179,55 +149,44 @@
       </div>
       <div class="timeline-event">
         <h4>2017–2019: Mobile Outreach</h4>
-        <p>Launched mobile wellness units, expanded multilingual telehealth services, and established school partnerships.</p>
+        <p>Launched mobile wellness units, expanded multilingual telehealth services, and built school partnerships.</p>
       </div>
       <div class="timeline-event">
         <h4>2020–2021: Pandemic Response</h4>
-        <p>Rolled out testing and telemedicine during COVID-19. Created the Eloheh Cares relief fund and trained 200+ community health workers.</p>
+        <p>Rolled out testing and telemedicine during COVID‑19. Created Eloheh Cares relief fund and trained 200+ community health workers.</p>
       </div>
       <div class="timeline-event">
         <h4>2022–2024: Innovation & Growth</h4>
-        <p>Launched our wellness app, began academic partnerships, and expanded to eight U.S. states.</p>
+        <p>Launched the Eloheh Wellness App, began academic partnerships, and expanded services across eight U.S. states.</p>
       </div>
     </div>
 
-    <!-- Collapsible: Looking Ahead -->
     <button class="collapsible">🔮 Looking Ahead</button>
     <div class="content">
-      <p>Eloheh Healthcare is shaping the future of wellness through policy advocacy, climate-resilient clinics, and telepsychology platforms. We continue to fight for equitable care, support elder communities, and bring compassion to every community we serve.</p>
+      <p>Eloheh Healthcare is shaping the future of wellness through policy advocacy, climate‑resilient clinics, and telepsychology platforms. We continue to fight for equitable care, support elder communities, and bring compassion to every community we serve.</p>
     </div>
 
-    <!-- Image -->
-    <img src="https://via.placeholder.com/800x300.png?text=Eloheh+Team+and+Community+Wellness" alt="Eloheh Team Photo" />
+    <img src="https://www.studentdoctor.net/wp-content/uploads/2007/10/shutterstock_317578871.png" alt="Eloheh Team Photo" />
 
-    <!-- External Link -->
     <p>For more on global health efforts, visit the <a href="https://www.who.int" target="_blank">World Health Organization</a>.</p>
 
-    <!-- Download Button -->
-    <p>
-      <a class="download-btn" href="eloheh_services_brochure.pdf" download>📄 Download Our Brochure</a>
-    </p>
+    <p><a class="download-btn" href="eloheh_services_brochure.pdf" download>📄 Download Our Brochure</a></p>
 
-    <!-- Email Contact -->
     <p><a href="mailto:contact@elohehhealth.org">📧 Contact Me</a></p>
   </div>
 
   <footer>
     <p>Last updated:
-      <script>
-        document.write(new Date(document.lastModified).toLocaleDateString());
-      </script>
+      <script>document.write(new Date(document.lastModified).toLocaleDateString());</script>
     </p>
   </footer>
 
-  <!-- Collapsible Section Script -->
   <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-    collapsibles.forEach((btn) => {
-      btn.addEventListener("click", function () {
+    document.querySelectorAll(".collapsible").forEach(btn => {
+      btn.addEventListener("click", function() {
         this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
+        const c = this.nextElementSibling;
+        c.style.display = c.style.display === "block" ? "none" : "block";
       });
     });
   </script>
