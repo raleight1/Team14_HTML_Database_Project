@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Eloheh Healthcare - Our Story</title>
   <style>
+    /* ===== General Page Styling ===== */
     body {
       font-family: 'Verdana', sans-serif;
       background-color: #fff;
@@ -11,6 +12,7 @@
       margin: 0; padding: 0;
     }
 
+    /* ===== Banner Section ===== */
     .banner {
       background-image: url('https://www.odu.edu/sites/default/files/program-page/headerimages/global-health-header.jpeg');
       background-size: cover;
@@ -31,6 +33,7 @@
       border-radius: 8px;
     }
 
+    /* ===== Content Container ===== */
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -50,6 +53,7 @@
 
     a { color: #0077b6; text-decoration: none; }
 
+    /* ===== Download Button Styling ===== */
     .download-btn {
       display: inline-block;
       background-color: #004c3f;
@@ -61,9 +65,9 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
     .download-btn:hover { background-color: #006b50; }
 
+    /* ===== Image Styling ===== */
     img {
       width: 100%;
       max-width: 800px;
@@ -71,6 +75,7 @@
       margin: 20px auto;
     }
 
+    /* ===== Footer Styling ===== */
     footer {
       margin-top: 40px;
       font-size: 14px;
@@ -78,6 +83,7 @@
       color: gray;
     }
 
+    /* ===== Collapsible Buttons ===== */
     .collapsible {
       background-color: #e6f1ed;
       color: #004c3f;
@@ -91,9 +97,9 @@
       margin-top: 20px;
       border-radius: 5px;
     }
-
     .collapsible:hover { background-color: #d1e8e0; }
 
+    /* ===== Collapsible Content Box ===== */
     .content {
       padding: 0 18px;
       display: none;
@@ -103,7 +109,7 @@
       margin-bottom: 20px;
     }
 
-    /* Horizontal Timeline */
+    /* ===== Horizontal Timeline Styling ===== */
     .timeline-horizontal {
       display: flex;
       justify-content: space-between;
@@ -113,7 +119,6 @@
       padding: 40px 0;
       border-top: 4px solid #004c3f;
     }
-
     .timeline-horizontal::before {
       content: '';
       position: absolute;
@@ -124,7 +129,6 @@
       background: #004c3f;
       z-index: 1;
     }
-
     .timeline-block {
       position: relative;
       flex: 1;
@@ -133,7 +137,6 @@
       text-align: center;
       z-index: 2;
     }
-
     .timeline-block::before {
       content: '';
       position: absolute;
@@ -146,31 +149,28 @@
       border-radius: 50%;
       z-index: 3;
     }
-
     .timeline-block h4 {
       margin: 20px 0 5px;
       font-size: 18px;
       color: #004c3f;
     }
-
     .timeline-block p {
       font-size: 14px;
       margin: 0;
     }
 
+    /* ===== Responsive Timeline for Mobile ===== */
     @media (max-width: 768px) {
       .timeline-horizontal {
         flex-direction: column;
         border-top: none;
       }
-
       .timeline-block {
         border-left: 4px solid #004c3f;
         margin-left: 20px;
         padding-left: 20px;
         text-align: left;
       }
-
       .timeline-block::before {
         top: 0;
         left: -12px;
@@ -181,6 +181,7 @@
 </head>
 <body>
 
+  <!-- ===== Banner Section ===== -->
   <div class="banner">
     <h1>Eloheh Healthcare</h1>
   </div>
@@ -188,61 +189,62 @@
   <div class="container">
     <p><i>Your Partner in Holistic Wellness</i></p>
 
-    <!-- Collapsible: Our Story -->
+    <!-- ===== Collapsible: Our Story ===== -->
     <button class="collapsible">📘 Our Story</button>
     <div class="content">
-      <p><span class="important">Eloheh Healthcare</span> was <u>established in 2015</u> with a mission to deliver inclusive, compassionate, and accessible healthcare to individuals from all walks of life.</p>
-      <p class="highlight">We began as a small, community-driven clinic and have evolved into a nationally trusted provider serving diverse populations through innovation and care.</p>
-      <p>The word <b>Eloheh</b> comes from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i>. Founded by a team of nurses, public health advocates, and educators, Eloheh set out to bridge healthcare access gaps through mobile units, culturally responsive services, and community education.</p>
+      <p><span class="important">Eloheh Healthcare</span> was <u>founded in 2015</u> with the vision of transforming healthcare into a more inclusive, compassionate, and accessible system for all. What began as a single community clinic in Portland has grown into a multi-state network focused on bridging health gaps for underserved populations.</p>
+      <p class="highlight">Our early mission was simple but powerful: to remove barriers that prevent people from receiving care, whether those barriers were financial, cultural, or geographic.</p>
+      <p>The name <b>Eloheh</b>—drawn from a Native American term meaning <i>“harmony”</i> and <i>“spirit of life”</i>—reflects our belief that health is not just the absence of illness, but the presence of balance and dignity. Our founding team, made up of nurses, public health advocates, and educators, pioneered programs like mobile health units, culturally tailored patient education, and partnerships with local schools to bring care directly to those who needed it most.</p>
     </div>
 
-    <!-- Horizontal Timeline -->
+    <!-- ===== Horizontal Timeline ===== -->
     <h2>⏳ Our Journey Through the Years</h2>
     <div class="timeline-horizontal">
       <div class="timeline-block">
         <h4>2015–2016</h4>
-        <p>Laying the Foundation: First clinic in Portland, free screenings, inclusive care model.</p>
+        <p>Opened first Portland clinic. Offered free health screenings, expanded preventive care, and tested our inclusive care model with community feedback.</p>
       </div>
       <div class="timeline-block">
         <h4>2017–2019</h4>
-        <p>Mobile Outreach: Wellness vans, multilingual telehealth, school partnerships.</p>
+        <p>Launched mobile wellness vans and multilingual telehealth services. Formed school-based health partnerships to reach youth and families.</p>
       </div>
       <div class="timeline-block">
         <h4>2020–2021</h4>
-        <p>Pandemic Response: COVID testing, virtual care, community health workers.</p>
+        <p>Responded to the COVID-19 pandemic with testing sites, vaccine distribution, virtual urgent care, and community health worker deployment.</p>
       </div>
       <div class="timeline-block">
         <h4>2022–2024</h4>
-        <p>Innovation & Growth: Wellness app, research partnerships, 8-state expansion.</p>
+        <p>Released Eloheh Wellness App, joined national research collaborations, and expanded operations into 8 states, serving over 500,000 patients annually.</p>
       </div>
     </div>
 
-    <!-- Collapsible: Looking Ahead -->
+    <!-- ===== Collapsible: Looking Ahead ===== -->
     <button class="collapsible">Looking Ahead</button>
     <div class="content">
-      <p>Eloheh Healthcare is shaping the future of wellness through policy advocacy, climate‑resilient clinics, and telepsychology platforms. We continue to fight for equitable care, support elder communities, and bring compassion to every community we serve.</p>
+      <p>Our next chapter focuses on advocacy, sustainability, and innovation. We are working with policymakers to strengthen healthcare equity, designing eco-friendly clinics, and integrating AI-driven tools to improve diagnosis and patient follow-up. But at our core, we remain guided by the same principle that launched Eloheh: healthcare should heal the whole person, not just treat symptoms.</p>
     </div>
 
-    <!--Team Photo -->
+    <!-- ===== Team Photo ===== -->
     <img src="https://www.studentdoctor.net/wp-content/uploads/2007/10/shutterstock_317578871.png" alt="Eloheh Team Photo" />
 
-    <!-- External Link -->
+    <!-- ===== External Link ===== -->
     <p>For more on global health efforts, visit the <a href="https://www.who.int" target="_blank">World Health Organization</a>.</p>
 
-    <!-- Download Button -->
+    <!-- ===== Download Button ===== -->
     <p><a class="download-btn" href="eloheh_services_brochure.pdf" download>Download Our Brochure</a></p>
 
-    <!-- Contact -->
+    <!-- ===== Contact Link ===== -->
     <p><a href="mailto:raleight@elohehhealth.org">Contact Me</a></p>
   </div>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>Last updated:
       <script>document.write(new Date(document.lastModified).toLocaleDateString());</script>
     </p>
   </footer>
 
-  <!-- Collapsible Logic -->
+  <!-- ===== Collapsible Toggle Script ===== -->
   <script>
     document.querySelectorAll(".collapsible").forEach(btn => {
       btn.addEventListener("click", function() {
@@ -254,4 +256,5 @@
   </script>
 </body>
 </html>
+
 
